@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Response</title>
+</head>
+<body>
+    <div class="response">
+        <h2>Results for '{{ incoming_msg }}'</h2>
+        <ul>
+            {% for res in result %}
+                <li>{{ res }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
